@@ -1,0 +1,11 @@
+n = int(input("Enter number of subjects: "))
+
+total = 0
+
+for i in range(n):
+    grade_point = float(input(f"Enter grade point for subject {i + 1}: "))
+    total = total + grade_point
+
+cgpa = total / n
+
+print("Your CGPA is:", round(cgpa, 2))
